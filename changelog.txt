@@ -1,4 +1,4 @@
-﻿CHANGELOG 2.5 mod_clm_minitab ab 1.0.0
+﻿CHANGELOG mod_clm_minitab ab 1.0.0
 ------------
 
 Legend:
@@ -10,6 +10,9 @@ $ -> Language fix or change
 % -> Performance Fix
 - -> Removed
 ! -> Note
+
+- - - - - 3.0.4 - [18-04-2015] - - - - - - - - - - - - - - - - - - - -
+! Vermeidung gleicher Versionsnummern in verschiedenen CLM Versionen
 
 - - - - - 1.0.4 - [23-01-2015] - - - - - - - - - - - - - - - - - - - -
 ^ Konfigurationsmöglichkeiten in "Erweitert" vergrößert
