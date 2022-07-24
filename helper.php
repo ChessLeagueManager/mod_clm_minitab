@@ -1,7 +1,7 @@
 <?php
 /**
  * @ Chess League Manager (CLM) Modul Mini-Tabelle 
- * @Copyright (C) 2011-2021 CLM Team.  All rights reserved
+ * @Copyright (C) 2011-2022 CLM Team.  All rights reserved
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  * @link http://www.chessleaguemanager.de
 */
@@ -36,7 +36,7 @@ class modCLM_MinitabHelper
 	global $mainframe;
 	
 	$liga	= $params->def('liga');
-	$runde	= clm_core::$load->request_int('runde');
+	$runde	= clm_core::$load->request_string('runde');
 	
 	$db		= JFactory::getDBO();
 	
