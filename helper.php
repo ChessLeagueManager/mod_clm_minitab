@@ -1,7 +1,7 @@
 <?php
 /**
  * @ Chess League Manager (CLM) Modul Mini-Tabelle 
- * @Copyright (C) 2011-2022 CLM Team.  All rights reserved
+ * @Copyright (C) 2011-2024 CLM Team.  All rights reserved
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  * @link http://www.chessleaguemanager.de
 */
@@ -65,7 +65,7 @@ class modCLM_MinitabHelper
 			." ORDER BY mp DESC, bp DESC, wp DESC".$ordering; }
 		if ($order[0]->b_wertung == 4) { 
 			$query = $query
-			." ORDER BY mp DESC, bp DESC, ".$ordering.", wp DESC"; }
+			." ORDER BY mp DESC, bp DESC ".$ordering.", wp DESC"; }
 			
 		$db->setQuery( $query );
 		$punkte = $db->loadObjectList();

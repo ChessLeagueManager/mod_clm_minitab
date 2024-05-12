@@ -2,12 +2,12 @@
 <extension type="module" version="1.7.0" client="site" method="upgrade">
 	<name>CLM MiniTable Modul</name>
 	<author>Fjodor Schafer</author>
-	<creationDate>18.11.2022</creationDate>
-	<copyright>(C) 2011-2022 CLM Team. All rights reserved.</copyright>
+	<creationDate>24.03.2024</creationDate>
+	<copyright>(C) 2011-2024 CLM Team. All rights reserved.</copyright>
 	<license>GNU/GPL</license>
 	<authorEmail>ich@vonfio.de</authorEmail>
 	<authorUrl>www.chessleaguemanager.de</authorUrl>
-	<version>4.0.0</version>
+	<version>4.1.0</version>
 	<description>
 		<![CDATA[
 			 <h3>Chess League Manager : MiniTable Modul</h3>

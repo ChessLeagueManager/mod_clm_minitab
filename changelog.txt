@@ -11,6 +11,9 @@ $ -> Language fix or change
 - -> Removed
 ! -> Note
 
+- - - - - 4.1.0 - [24-03-2024] - - - - - - - - - - - - - - - - - - - -
+# Berliner Wertung als 4.Kriterium
+
 - - - - - 4.0.0 - [18-11-2022] - - - - - - - - - - - - - - - - - - - -
 # background-color bei Mehrfachnutzung
 
