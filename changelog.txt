@@ -11,6 +11,9 @@ $ -> Language fix or change
 - -> Removed
 ! -> Note
 
+- - - - - 4.1.1 - [05-07-2024] - - - - - - - - - - - - - - - - - - - -
+^ Sortierung um Teilnehmernummer ergänzt, auch wenn ordering gesetzt ist
+
 - - - - - 4.1.0 - [24-03-2024] - - - - - - - - - - - - - - - - - - - -
 # Berliner Wertung als 4.Kriterium
 

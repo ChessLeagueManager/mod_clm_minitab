@@ -46,8 +46,8 @@ class modCLM_MinitabHelper
 			;
 		$db->setQuery($query);
 		$order = $db->loadObjectList();
- 			if ($order[0]->order == 1) { $ordering = " , m.ordering ASC";}
-			else { $ordering =', a.tln_nr ASC ';} 
+ 			if ($order[0]->order == 1) { $ordering = " , m.ordering ASC ";}
+			else { $ordering ='';} 
 		$query = " SELECT a.sid,  a.tln_nr as tln_nr,m.name as name, SUM(a.manpunkte) as mp, m.zps, "
 			." SUM(a.brettpunkte) as bp, SUM(a.wertpunkte) as wp, m.published, m.man_nr "
 			." FROM #__clm_rnd_man as a "
@@ -65,8 +65,8 @@ class modCLM_MinitabHelper
 			." ORDER BY mp DESC, bp DESC, wp DESC".$ordering; }
 		if ($order[0]->b_wertung == 4) { 
 			$query = $query
-			." ORDER BY mp DESC, bp DESC ".$ordering.", wp DESC"; }
-			
+			." ORDER BY mp DESC, bp DESC ".$ordering.", wp DESC "; }
+		$query = $query.', a.tln_nr ASC ';	
 		$db->setQuery( $query );
 		$punkte = $db->loadObjectList();
 	
