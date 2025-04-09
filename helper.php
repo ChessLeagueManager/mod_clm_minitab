@@ -48,7 +48,7 @@ class modCLM_MinitabHelper
 		$order = $db->loadObjectList();
  			if ($order[0]->order == 1) { $ordering = " , m.ordering ASC ";}
 			else { $ordering ='';} 
-		$query = " SELECT a.sid,  a.tln_nr as tln_nr,m.name as name, SUM(a.manpunkte) as mp, m.zps, "
+		$query = " SELECT a.sid,  a.tln_nr as tln_nr,m.name as name, SUM(a.manpunkte) as mp, m.zps, m.rankingpos, "
 			." SUM(a.brettpunkte) as bp, SUM(a.wertpunkte) as wp, m.published, m.man_nr "
 			." FROM #__clm_rnd_man as a "
 			." LEFT JOIN #__clm_mannschaften as m ON m.liga = $liga AND m.tln_nr = a.tln_nr "
@@ -57,7 +57,7 @@ class modCLM_MinitabHelper
 			if ($runde != "") { $query = $query." AND runde < ".($runde +1);}
 		$query = $query	
 			." GROUP BY a.tln_nr ";
-		if ($order[0]->b_wertung == 0) {   
+/*		if ($order[0]->b_wertung == 0) {   
 			$query = $query
 			." ORDER BY mp DESC, bp DESC".$ordering; }
 		if ($order[0]->b_wertung == 3) { 
@@ -66,6 +66,8 @@ class modCLM_MinitabHelper
 		if ($order[0]->b_wertung == 4) { 
 			$query = $query
 			." ORDER BY mp DESC, bp DESC ".$ordering.", wp DESC "; }
+*/
+		$query = $query." ORDER BY rankingpos "; 
 		$query = $query.', a.tln_nr ASC ';	
 		$db->setQuery( $query );
 		$punkte = $db->loadObjectList();

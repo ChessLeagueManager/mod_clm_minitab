@@ -11,6 +11,10 @@ $ -> Language fix or change
 - -> Removed
 ! -> Note
 
+- - - - - 4.2.2 - [28-11-2024] - - - - - - - - - - - - - - - - - - - -
+! Setzt Version 4.2.2 der CLM-Hauptkomponente vorraus
+# Rundenbericht: In Rangliste punkt- und wertungsgleich -> gleiche Platzierung
+
 - - - - - 4.1.1 - [05-07-2024] - - - - - - - - - - - - - - - - - - - -
 ^ Sortierung um Teilnehmernummer ergänzt, auch wenn ordering gesetzt ist
 

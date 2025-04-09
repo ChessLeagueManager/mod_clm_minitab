@@ -1,7 +1,7 @@
 <?php 
 /**
  * @ Chess League Manager (CLM) Modul Minitabelle 
- * @Copyright (C) 2011-2022 CLM Team.  All rights reserved
+ * @Copyright (C) 2011-2024 CLM Team.  All rights reserved
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  * @link http://www.chessleaguemanager.de
 */
@@ -50,7 +50,7 @@ for ($x=0; $x< ($liga[0]->teil); $x++){
 		if($x >= ($liga[0]->teil-$liga[0]->ab)) { echo "_ab"; }
 		if($x >= ($liga[0]->teil-($liga[0]->ab_evtl + $liga[0]->ab)) AND $x < ($liga[0]->teil-$liga[0]->ab) ) { echo "_ab_evtl"; }
 	}
-	?>"><div><?php echo $x+1; ?></div></td>
+	?>"><div><?php echo $punkte[$x]->rankingpos; //$x+1; ?></div></td>
     
 	<td class="team">
 	<?php 
