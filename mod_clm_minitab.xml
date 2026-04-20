@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="1.7.0" client="site" method="upgrade">
+<extension type="module" version="4.0.0" client="site" method="upgrade">
 	<name>CLM MiniTable Modul</name>
 	<author>Fjodor Schäfer</author>
-	<creationDate>28.11.2024</creationDate>
-	<copyright>(C) 2011-2024 CLM Team. All rights reserved.</copyright>
+	<creationDate>11.04.2026</creationDate>
+	<copyright>(C) 2011-2026 CLM Team. All rights reserved.</copyright>
 	<license>GNU/GPL</license>
 	<authorEmail>ich@vonfio.de</authorEmail>
 	<authorUrl>www.chessleaguemanager.de</authorUrl>
-	<version>4.2.2</version>
+	<version>5.0.0</version>
 	<description>
 		<![CDATA[
 			 <h3>Chess League Manager : MiniTable Modul</h3>
 			 <p>Modul zur Darstellung von Ligatabellen für den öffentlichen Bereich.</p>
-			 <p><a target="_blank" href="http://www.chessleaguemanager.de">CLM Projekt Homepage</a></p>
+			 <p><a target="_blank" href="https://joomla.chessleaguemanager.org">CLM Projekt Homepage</a></p>
 			 <p>&copy; Fjodor Schäfer [<a target="_blank" href="http://www.vonfio.de">www.vonfio.de</a>]</p>
 			 ]]>
 		 </description>

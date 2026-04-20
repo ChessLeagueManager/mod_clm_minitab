@@ -1,21 +1,22 @@
 <?php 
 /**
  * @ Chess League Manager (CLM) Modul Minitabelle 
- * @Copyright (C) 2011-2024 CLM Team.  All rights reserved
+ * @Copyright (C) 2008-2026 CLM Team.  All rights reserved
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
- * @link http://www.chessleaguemanager.de
+ * @link https://chessleaguemanager.org
 */
 // no direct access
 defined('_JEXEC') or die('Restricted access'); 
 
-$view	= clm_core::$load->request_string( 'view' );
+use Joomla\CMS\Language\Text;
+use Joomla\CMS\Uri\Uri;
 
+$view	= clm_core::$load->request_string( 'view' );
 $dg	= clm_core::$load->request_int( 'dg' );
 $itemid	= clm_core::$load->request_int( 'Itemid' );
-
 ?>
 
-<link href="<?php echo JURI::base().'modules/mod_clm_minitab/tmpl/minitab_css.css'; ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo URI::base().'modules/mod_clm_minitab/tmpl/minitab_css.css'; ?>" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
 <!--
@@ -27,10 +28,10 @@ tr.bold { <?php echo $bold; ?> }
 <?php if ( $show_th == 1 ) { ?>
 <tr>
 	<th class="rang"></th>
-	<th class="team"><div><?php echo JText::_('Team') ?></div></th>
-	<?php if ( $show_mp == 1 ) { ?><th class="mp"><div><?php echo JText::_('MP') ?></div></th><?php } ?>
-	<?php if ( $show_bp == 1 ) { ?><th class="bp"><div><?php echo JText::_('BP') ?></div></th><?php } ?>
-	<?php if ( $liga[0]->b_wertung > 0) { ?><th class="bp"><div><?php echo JText::_('WP') ?></div></th><?php } ?>
+	<th class="team"><div><?php echo Text::_('Team') ?></div></th>
+	<?php if ( $show_mp == 1 ) { ?><th class="mp"><div><?php echo Text::_('MP') ?></div></th><?php } ?>
+	<?php if ( $show_bp == 1 ) { ?><th class="bp"><div><?php echo Text::_('BP') ?></div></th><?php } ?>
+	<?php if ( $liga[0]->b_wertung > 0) { ?><th class="bp"><div><?php echo Text::_('WP') ?></div></th><?php } ?>
 </tr>
 <?php } ?>
 

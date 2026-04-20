@@ -1,12 +1,14 @@
 <?php
 /**
  * @ Chess League Manager (CLM) Modul Mini-Tabelle 
- * @Copyright (C) 2011-2024 CLM Team.  All rights reserved
+ * @Copyright (C) 2008-2026 CLM Team.  All rights reserved
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
- * @link http://www.chessleaguemanager.de
+ * @link https://chessleaguemanager.org
 */
 // no direct access
 defined('_JEXEC') or die('Restricted access');
+
+use Joomla\CMS\Factory;
 
 class modCLM_MinitabHelper
 {
@@ -17,7 +19,7 @@ class modCLM_MinitabHelper
 	global $mainframe;
 	
 	$liga	= $params->def('liga');
-	$db	= JFactory::getDBO();
+	$db	= Factory::getDBO();
  
 		$query = " SELECT a.* FROM #__clm_liga as a"
 			." WHERE a.id = ".$liga
@@ -38,7 +40,7 @@ class modCLM_MinitabHelper
 	$liga	= $params->def('liga');
 	$runde	= clm_core::$load->request_string('runde');
 	
-	$db		= JFactory::getDBO();
+	$db		= Factory::getDBO();
 	
 	// ordering für Rangliste -> Ersatz für direkten Vergleich
 		$query = "SELECT a.sid, a.order, a.b_wertung FROM #__clm_liga as a"
